@@ -7,7 +7,6 @@ using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.IO;
 using helloWorld;
-
 namespace helloWorld
 {
     public class Person
@@ -51,6 +50,12 @@ namespace helloWorld
         {
             _firstName = firstName;
             _lastName = lastName;
+            _age = 0;
+        }
+		 public Person(string firstName)
+        {
+            _firstName = firstName;
+            _lastName = "";
             _age = 0;
         }
 
