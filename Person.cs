@@ -16,7 +16,8 @@ namespace helloWorld
         private string _firstName;
         private string _lastName;
         private int _age;
-
+        private string _pet_name;
+        
         // Properties
         public string FirstName
         {
@@ -36,6 +37,12 @@ namespace helloWorld
             set { _age = value; }
         }
 
+        public string PetName
+        {
+            get { return _pet_name; }
+            set { _pet_name = value; }
+        }
+        
         // Constructors
         public Person(string firstName, string lastName)
         {
@@ -64,8 +71,9 @@ namespace helloWorld
 
         public string GetFullName()
         {
-            return _firstName + " " + _lastName;
+            return _firstName + "and" + _lastName;
         }
+        
     }
 
 }
