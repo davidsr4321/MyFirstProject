@@ -17,6 +17,7 @@ namespace helloWorld
         private string _lastName;
         private int _age;
         private string _pet_name;
+        private double _height;
         
         // Properties
         public string FirstName
@@ -37,10 +38,12 @@ namespace helloWorld
             set { _age = value; }
         }
 
+
         public string PetName
         {
             get { return _pet_name; }
             set { _pet_name = value; }
+
         }
         
         // Constructors
@@ -73,7 +76,13 @@ namespace helloWorld
         {
             return _firstName + "and" + _lastName;
         }
+<<<<<<< HEAD
         
+=======
+        public void AddToHeight() {
+            Height += 1.0;
+        }
+>>>>>>> 248d42c55df754df9f7547fc71bc1e5eea6ec66f
     }
 
 }
