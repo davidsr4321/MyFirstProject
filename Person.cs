@@ -18,7 +18,7 @@ namespace helloWorld
         private int _age;
         private string _pet_name;
         private double _height;
-        
+        private string _my_color;
         // Properties
         public string FirstName
         {
