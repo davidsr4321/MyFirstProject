@@ -16,6 +16,7 @@ namespace helloWorld
         private string _firstName;
         private string _lastName;
         private int _age;
+        private double _height;
 
         // Properties
         public string FirstName
@@ -36,6 +37,12 @@ namespace helloWorld
             set { _age = value; }
         }
 
+        public double Height
+        {
+            get { return _height; }
+            set { _height = value; }
+        }
+        
         // Constructors
         public Person(string firstName, string lastName)
         {
@@ -65,6 +72,9 @@ namespace helloWorld
         public string GetFullName()
         {
             return _firstName + " " + _lastName;
+        }
+        public void AddToHeight() {
+            Height += 1.0;
         }
     }
 
